@@ -1,0 +1,162 @@
+.amado-nav {
+  margin-bottom: 5rem;
+}
+#carouselExampleCaptions {
+  max-height: 600px;
+}
+.carousel-inner .carousel-item img {
+  width: 100%;
+  min-height: 400px;
+  max-height: 600px;
+  object-fit: cover;
+  object-position: center;
+}
+.carousel-caption {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.carousel-caption h5,
+.carousel-caption p {
+  color: white;
+  font-size: 1.2rem;
+}
+a.shopnow {
+  padding: 10px 20px;
+  color: #fbb806;
+  font-size: 1.2rem;
+  border-radius: 5px;
+  border: 3px solid;
+  transition: 0.5s ease;
+}
+a.shopnow:hover {
+    background-color: #fbb806;
+    color: white;
+}
+hr.divider {
+    border: 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+tr {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+a.del-product-cart {
+  font-size: 1.1rem;
+}
+a.del-product-cart:hover {
+  color: red;
+}
+button.qty-up-down {
+  border: none;
+  outline: none;
+  background-color: #F5F7FA;
+  font-size: 1.5rem;
+  line-height: 40px;
+  height: 40px;
+  padding: 0 10px;
+}
+button.qty-up-down:hover {
+  background-color: #b1b1b1;
+}
+input.qty-text {
+  height: 40px !important;
+  text-align: center !important;
+}
+.wrapper{
+  height: 300px;
+  z-index: 1000;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  transition: 1s ease;
+}
+.notfound {
+  margin-top: 5rem;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.notfound img {
+  width: 32%;
+}
+.notfound h3 {
+  margin-top: 2rem;
+}
+
+#add-favorite {
+  background-color: red;
+}
+#add-favorite:hover {
+  background-color: black;
+  color: white;
+}
+
+.vnpay{
+  border: 1px solid #333;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+}
+
+.vnpay img{
+  width: 200px;
+}
+
+#order-success{
+  position: relative;
+  height: 100vh;
+  width: 100%;
+}
+.order-success{
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 50px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.order-success > span {
+  font-size: 50px;
+  color: limegreen;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 3px solid limegreen;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.order-success > p {
+  font-size: 30px;
+  
+}
+.order-success .links{
+  display: flex;
+  
+}
+.order-success .links a{
+  min-width: 200px;
+  font-size: 18px;
+  border: 1px solid #ddd;
+  margin-right: 1rem;
+  padding: .5rem 0;
+  color: #333;
+  border-radius: 26px;
+  text-decoration: none;
+}
+.order-success .links a:hover{
+  background-color: #ddd;
+  transition: .3s;
+}
+.form-payment{
+  display: flex;
+  justify-content: center;
+}
