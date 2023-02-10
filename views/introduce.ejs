@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <!-- Title  -->
+    <title>PetShop-Giới thiệu</title>
+
+    <!-- Favicon  -->
+    <link rel="icon" href="/public/img/core-img/favicon.ico" />
+
+    <!-- Core Style CSS -->
+    <link rel="stylesheet" type="text/css" href="/public/css/core-style.css" />
+   
+        <link rel="stylesheet" type="text/css" href="/public/css/style.css" />
+        <script src="https://kit.fontawesome.com/2effc4a79a.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css">
+</head>
+<body>
+    <div class="search-wrapper section-padding-100">
+        <div class="search-close">
+          <i class="fa fa-close" aria-hidden="true"></i>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <div class="search-content">
+                <form action="/search" method="get">
+                  <input
+                    type="search"
+                    name="search"
+                    id="search"
+                    placeholder="Nhập từ khóa..."
+                  />
+                  <button type="submit">
+                    <img src="/public/img/core-img/search.png" alt="" />
+                  </button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Search Wrapper Area End -->
+  
+      <!-- ##### Main Content Wrapper Start ##### -->
+      <div class="main-content-wrapper d-flex clearfix">
+        <!-- Mobile Nav (max width 767px)-->
+        <div class="mobile-nav">
+          <!-- Navbar Brand -->
+          <div class="amado-navbar-brand">
+            <a href="/"><img src="/public/img/core-img/logo.png" alt="" /></a>
+          </div>
+          <!-- Navbar Toggler -->
+          <div class="amado-navbar-toggler">
+            <span></span><span></span><span></span>
+          </div>
+        </div>
+  
+        <!-- Header Area Start -->
+        <header class="header-area clearfix">
+          <!-- Close Icon -->
+          <div class="nav-close">
+            <i class="fa fa-close" aria-hidden="true"></i>
+          </div>
+          <!-- Logo -->
+          <div class="logo">
+            <a href="/"><img src="/public/img/core-img/logo.png" alt="" /></a>
+          </div>
+          <!-- Amado Nav -->
+          <nav class="amado-nav">
+            <ul>
+              <li class="active"><a href="/">Trang chủ</a></li>
+              <li><a href="/product">Sản phẩm</a></li>
+              <li><a href="/login">Đăng nhập</a></li>
+              <li><a href="/login">Đăng xuất</a></li>
+              <li><a href="/introduce">Giới thiệu</a></li>
+              <li><a href="/contact">Liên hệ</a></li>
+            </ul>
+          </nav>
+          <!-- Cart Menu -->
+          <div class="cart-fav-search mb-100">
+            
+            <a href="/cart" class="cart-nav"><img src="/public/img/core-img/cart.png" alt="" /> Giỏ hàng ( <span style="color: #FBB933;"><%= customer ? customer.listProduct.length : 0 %> </span> )</a>
+            <a href="/favorite" class="fav-nav"
+              ><img src="/public/img/core-img/favorites.png" alt="" /> Yêu
+              thích</a
+            >
+            <a href="#" class="search-nav"
+              ><img src="/public/img/core-img/search.png" alt="" /> Tìm kiếm</a
+            >
+          </div>
+        </header>
+        <div class="introduce-wrap">
+          <div class="introduce">
+            <h1 class="introduce-title">Giới thiệu về  <span style="color: #ccdab1;font-size: inherit;">Amado</span></h1>
+            <span class="introduce-content">
+              <p>
+                Với triết lý kinh doanh “Khách hàng là giá trị cốt lõi” TRUNG TÂM PHÂN PHỐI MÁY LỌC NƯỚC VINH NGỌC luôn quan niệm bằng lương tâm và nhiệt huyết nghề nghiệp mang đến sự hài lòng và sự an tâm tuyệt đối về chất lượng sản phẩm cũng như dịch vụ Bảo hành, sửa chữa; từ đó tiếp tục đặt lòng tin và sự yêu mến đối với chúng tôi.
+                <p>Xuất phát từ triết lý đó, các nhân viên tại đây đều được truyền niềm đam mê và sự chân thành để tận tâm phục vụ và đem niềm đam mê đó đến với tất cả Quý khách hàng. Khi đến với trung tâm của chúng tôi , Quý khách chắc chắn sẽ được chăm sóc tận tâm bởi đội ngũ nhân viên chuyên nghiệp, có kiến thức sâu rộng với thái độ phục vụ nhiệt tình, hiểu rõ được giá trị của mỗi thương hiệu, mỗi dòng sản phẩm, giúp Quý khách lựa chọn cho mình những mẫu sản phẩm điện thoại mới nhất cũng như phù hợp nhất, thỏa mãn nhu cầu công việc cũng như giải trí theo phong cách cá tính nhất.
+                </p>
+            <p>Với tình yêu và kinh nghiệm lâu năm trong nghề, chúng tôi luôn trăn trở làm sao để có thể mang lại được những giá trị tốt nhất cho người sử dụng; vì chúng tôi hiểu chỉ như vậy mới có thể tạo lập được sự thành công cho trung tâm chúng tôi như ngày hôm nay và tiếp tục phát triển lâu dài, bền vững mãi về sau.
+            </p>
+                
+              </p>
+            </span>
+          </div>
+        </div>
+
+      </div>
+      <section class="newsletter-area section-padding-100-0">
+        <div class="container">
+          <div class="row align-items-center">
+            <!-- Newsletter Text -->
+            <div class="col-12 col-lg-6 col-xl-7">
+              <div class="newsletter-text mb-100">
+                <h2>Subscribe for a <span>25% Discount</span></h2>
+                <p>
+                  Nulla ac convallis lorem, eget euismod nisl. Donec in libero sit
+                  amet mi vulputate consectetur. Donec auctor interdum purus, ac
+                  finibus massa bibendum nec.
+                </p>
+              </div>
+            </div>
+            <!-- Newsletter Form -->
+            <div class="col-12 col-lg-6 col-xl-5">
+              <div class="newsletter-form mb-100">
+                <form action="#" method="post">
+                  <input type="email" name="email" class="nl-email" placeholder="Your E-mail" />
+                  <input type="submit" value="Subscribe" />
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- ##### Newsletter Area End ##### -->
+    
+      <!-- ##### Footer Area Start ##### -->
+      <footer class="footer_area clearfix">
+        <div class="container">
+          <div class="row align-items-center">
+            <!-- Single Widget Area -->
+            <div class="col-12 col-lg-4">
+              <div class="single_widget_area">
+                <!-- Logo -->
+                <div class="footer-logo mr-50">
+                  <a href="index.html"><img src="/public/img/core-img/logo2.png" alt="" /></a>
+                </div>
+                <!-- Copywrite Text -->
+                <p class="copywrite">
+                  <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                  <!-- Copyright &copy;
+                  <script>
+                    document.write(new Date().getFullYear());
+                  </script>
+                  All rights reserved | This template is made with
+                  <i class="fa fa-heart-o" aria-hidden="true"></i> by
+                  <a href="https://colorlib.com" target="_blank">Colorlib</a> &
+                  Re-distributed by
+                  <a href="https://themewagon.com/" target="_blank">Themewagon</a> -->
+                  <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                  Cửa hàng bán hàng chuyên cung cấp các sản phẩm chất lượng uy tín.
+                </p>
+              </div>
+            </div>
+            <!-- Single Widget Area -->
+            <div class="col-12 col-lg-8">
+              <div class="single_widget_area">
+                <!-- Footer Menu -->
+               
+
+                <div class="footer_menu">
+                  <div class="footer-row">
+                    <div class="footer-column">
+                      <div class="footer-column-title">Thông tin liên hệ</div>
+                      <ul class="footer-info">
+                        <li>
+                          <svg fill="#fff" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
+                          width="20px" height="20px" viewBox="0 0 395.71 395.71"
+                          xml:space="preserve">
+                       <g>
+                         <path d="M197.849,0C122.131,0,60.531,61.609,60.531,137.329c0,72.887,124.591,243.177,129.896,250.388l4.951,6.738
+                           c0.579,0.792,1.501,1.255,2.471,1.255c0.985,0,1.901-0.463,2.486-1.255l4.948-6.738c5.308-7.211,129.896-177.501,129.896-250.388
+                           C335.179,61.609,273.569,0,197.849,0z M197.849,88.138c27.13,0,49.191,22.062,49.191,49.191c0,27.115-22.062,49.191-49.191,49.191
+                           c-27.114,0-49.191-22.076-49.191-49.191C148.658,110.2,170.734,88.138,197.849,88.138z"/>
+                       </g>
+                       </svg>
+                          <span>Quang Trung - An Lão - Hải Phòng</span>
+                        </li>
+                        <li>
+                          <svg fill="#fff" width="20px" height="20px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" transform="rotate(270)" stroke="#fff">
+
+                            <g id="SVGRepo_bgCarrier" stroke-width="0"/>
+                            
+                            <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"/>
+                            
+                            <g id="SVGRepo_iconCarrier">
+                            
+                            <path d="M21.384,17.752a2.108,2.108,0,0,1-.522,3.359,7.543,7.543,0,0,1-5.476.642C10.5,20.523,3.477,13.5,2.247,8.614a7.543,7.543,0,0,1,.642-5.476,2.108,2.108,0,0,1,3.359-.522L8.333,4.7a2.094,2.094,0,0,1,.445,2.328A3.877,3.877,0,0,1,8,8.2c-2.384,2.384,5.417,10.185,7.8,7.8a3.877,3.877,0,0,1,1.173-.781,2.092,2.092,0,0,1,2.328.445Z"/>
+                            
+                            </g>
+                            
+                            </svg>
+                          <span>0123456789 - 0987654321</span>
+                        </li>
+                        <li>
+                          <svg height="20px" width="20px" version="1.1" id="_x32_" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
+                            viewBox="0 0 512 512"   xml:space="preserve" fill="#fff">
+                         
+                          <g>
+                            <path class="st0" d="M440.917,67.925H71.083C31.827,67.925,0,99.752,0,139.008v233.984c0,39.256,31.827,71.083,71.083,71.083
+                              h369.834c39.255,0,71.083-31.827,71.083-71.083V139.008C512,99.752,480.172,67.925,440.917,67.925z M178.166,321.72l-99.54,84.92
+                              c-7.021,5.992-17.576,5.159-23.567-1.869c-5.992-7.021-5.159-17.576,1.87-23.567l99.54-84.92c7.02-5.992,17.574-5.159,23.566,1.87
+                              C186.027,305.174,185.194,315.729,178.166,321.72z M256,289.436c-13.314-0.033-26.22-4.457-36.31-13.183l0.008,0.008l-0.032-0.024
+                              c0.008,0.008,0.017,0.008,0.024,0.016L66.962,143.694c-6.98-6.058-7.723-16.612-1.674-23.583c6.057-6.98,16.612-7.723,23.582-1.674
+                              l152.771,132.592c3.265,2.906,8.645,5.004,14.359,4.971c5.706,0.017,10.995-2.024,14.44-5.028l0.074-0.065l152.615-132.469
+                              c6.971-6.049,17.526-5.306,23.583,1.674c6.048,6.97,5.306,17.525-1.674,23.583l-152.77,132.599
+                              C282.211,284.929,269.322,289.419,256,289.436z M456.948,404.771c-5.992,7.028-16.547,7.861-23.566,1.869l-99.54-84.92
+                              c-7.028-5.992-7.861-16.546-1.869-23.566c5.991-7.029,16.546-7.861,23.566-1.87l99.54,84.92
+                              C462.107,387.195,462.94,397.75,456.948,404.771z"/>
+                          </g>
+                          </svg>
+                          <span>Xuhaostore@gmail.com</span>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="footer-column">
+                      <div class="footer-column-title">Chính sách</div>
+                      <ul class="footer-info">
+                        <li>
+                          <span>
+                            Chính sách thanh toán
+                          </span>
+                        </li>
+                        <li>
+                          <span>
+                            Chính sách vận chuyển
+                          </span>
+                        </li>
+                        <li>
+                          <span>
+                            Chính sách đổi trả
+                          </span>
+                        </li>
+                        <li>
+                          <span>
+                            Chính sách bảo hành
+                          </span>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="footer-column">
+                      <div class="footer-column-title">Điều khoản</div>
+                      <ul class="footer-info">
+                        <li>
+                          <span>
+                            Điều khoản sử dụng
+                          </span>
+                        </li>
+                        <li>
+                          <span>
+                            Điều khoản giao dịch
+                          </span>
+                        </li>
+                        <li>
+                          <span>
+                           Dịch vụ tiện ích
+                          </span>
+                        </li>
+                        <li>
+                          <span>
+                            Quyền sử hữu trí tuệ
+                          </span>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+      
+</body>
+</html>

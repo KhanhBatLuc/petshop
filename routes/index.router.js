@@ -34,5 +34,7 @@ router.get('/pay-online', indexController.getPayOnline);
 router.get('/orderSuccess', indexController.getSuccess);
 router.post('/payment/:id', indexController.postPayOnline);
 
+router.get('/introduce', indexController.getIntroducePage)
+router.get('/contact', indexController.getContactPage)
 
 module.exports = router;

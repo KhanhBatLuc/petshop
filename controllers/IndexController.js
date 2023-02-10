@@ -512,6 +512,15 @@ class IndexController {
       res.redirect('/login');
     }
   }
+
+  getIntroducePage (req,res) {
+    console.log(req.session.passport);
+    res.render("introduce", {customer: null})
+  }
+
+  getContactPage (req,res) {
+    res.render("contact",{customer: null})
+  }
 }
 
 module.exports = new IndexController();
